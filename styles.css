@@ -1,0 +1,133 @@
+/* Resetowanie domyślnych styli */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* Dodajemy płynne przejście */
+}
+
+/* Ogólne style dla całej strony */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #1a1a1a;
+  color: #fff;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(to right, #2196F3, #00bcd4);
+  padding: 20px 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00bcd4;
+}
+
+/* Resetowanie domyślnych styli */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ogólne style dla sekcji */
+section {
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+}
+
+section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+section p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+/* Style dla sekcji "About" */
+#about {
+  background-color: #2196F3; /* Niebieski */
+  z-index: 2;
+}
+
+/* Style dla sekcji "Porady" (tips) */
+#tips {
+  background-color: #FF5722; /* Pomarańczowy */
+  z-index: 2;
+}
+
+/* Style dla sekcji "Projekty" (projects) */
+#projects {
+  background-color: #4CAF50; /* Zielony */
+  z-index: 2;
+}
+
+/* Style dla sekcji "Kontakt" (contact) */
+#contact {
+  background-color: #9C27B0; /* Fioletowy */
+  z-index: 2;
+}
+
+
+#hero {
+  z-index: 1;
+  background-size: cover;
+  background-position: center center;
+}
+
+#hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+/* Pozostałe sekcje i style dodaj według potrzeb */
+
+/* Stopka */
+footer {
+  background: #333;
+  text-align: center;
+  padding: 20px 0;
+  color: #fff;
+}
+
+/* Responsywność */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+  }
+}
