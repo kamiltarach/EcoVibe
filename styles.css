@@ -4,10 +4,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-.fade-out {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out; /* Dodajemy płynne przejście */
-}
 
 /* Ogólne style dla całej strony */
 body {
@@ -54,19 +50,8 @@ nav a:hover {
   color: #00bcd4;
 }
 
-/* Resetowanie domyślnych styli */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* Ogólne style dla sekcji */
-section {
-  padding: 100px 0;
-  text-align: center;
-  color: #fff;
-}
+
 
 section h2 {
   font-size: 2.5em;
@@ -78,7 +63,6 @@ section p {
   font-size: 1.2em;
   line-height: 1.6;
 }
-
 /* Style dla sekcji "About" */
 #about {
   background-color: #2196F3; /* Niebieski */
@@ -103,26 +87,34 @@ section p {
   z-index: 2;
 }
 
-
+/* Ogólne style dla zawartości sekcji */
+section {
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden; /* Dodajemy overflow: hidden, aby ukryć treść, która wychodzi poza sekcję */
+}
+/* Style dla sekcji "Hero" */
 #hero {
   z-index: 1;
   background-size: cover;
   background-position: center center;
+  position: relative;
+  overflow: hidden; /* Dodajemy overflow: hidden, aby ukryć tekst, który wychodzi poza sekcję Hero */
 }
 
-#hero h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
-/* Pozostałe sekcje i style dodaj według potrzeb */
-
-/* Stopka */
-footer {
-  background: #333;
-  text-align: center;
-  padding: 20px 0;
-  color: #fff;
+#hero .hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 80%;
+  margin: 0 auto;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Dodajemy transform */
 }
 
 /* Responsywność */
